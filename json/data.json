@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "parent": "#",
+        "text": "Simple root node",
+        "a_attr": {
+            "href": "链接",
+            "id": 1
+        },
+        "li_attr": {
+            "href": "属性",
+            "id": 2
+        },
+        "state": {
+            "opened": false,
+            "disabled": false,
+            "selected": false
+        }
+    },
+    {
+        "id": "2",
+        "parent": "#",
+        "text": "Root node 2"
+    },
+    {
+        "id": "3",
+        "parent": "1",
+        "icon": "fa fa-file",
+        "text": "Child 1",
+		"state": {
+            "disabled": true
+        }
+    },
+    {
+        "id": "4",
+        "parent": "2",
+        "icon": "fa fa-file",
+        "text": "Child 2"
+    },
+    {
+        "id": "5",
+        "parent": "4",
+        "icon": "fa fa-file",
+        "text": "Child 6"
+    },
+    {
+        "id": "6",
+        "parent": "4",
+        "icon": "fa fa-file",
+        "text": "Child 5"
+    },
+    {
+        "id": "7",
+        "parent": "4",
+        "icon": "fa fa-file",
+        "text": "Child 7"
+    }
+]

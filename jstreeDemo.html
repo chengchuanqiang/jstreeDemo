@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jstree demo</title>
+	<link rel="stylesheet" href="jstree/dist/themes/default/style.min.css" />
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />  
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css" />  
+</head>
+<body>
+	<div class="container">  
+			<div class="row" style="height: 100px;"></div>
+			
+			<div class="row">
+				<div >  
+					<button class="btn btn-info" onclick="node_create()"> 新增 </button>
+					<button class="btn btn-info" onclick="node_rename()"> 编辑</button>
+					<button class="btn btn-info"  onclick="node_delete()"> 删除</button>
+				</div>
+			</div>
+			<div class="row" style="height: 5px;"></div>
+            <div class="row">  
+                <div class="col-md-3">  
+                    <!-- 描述：搜索框 -->  
+                    <div class="input-group row">  
+                        <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-screenshot"></i></span>  
+						<input type="text" class="form-control" placeholder="请输入功能名称..." id="search_ay" aria-describedby="basic-addon1">  
+                    </div>  
+                    <!--描述：jstree 树形菜单容器-->  
+                    <div id="jstree_demo_div" class="row">  
+  
+                    </div>  
+                </div>  
+                <div lass="col-md-9">  
+                    <button class="btn btn-tab" var='json/data.json'>data.json</button> <!--点击切换资源-->  
+                    <button class="btn btn-tab" var='json/data2.json'>data2.json</button> <!--点击切换资源-->  
+                    <button class="btn refresh "><i class="glyphicon glyphicon-refresh"></i></button> <!--点击刷新资源-->  
+                </div>  
+			</div>  
+
+    </div> 
+	
+
+	<script src="jquery/jquery.min.js"></script>
+	<script src="jstree/dist/jstree.min.js"></script>
+	<script src="jstreeDemo.js?20180125"></script>
+
+</body>
+</html>
